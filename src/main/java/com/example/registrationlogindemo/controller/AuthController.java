@@ -8,26 +8,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AuthController {
 
 
-    @GetMapping("index")
+    @GetMapping("index.html")
     public String home() {
         return "index";
     }
 
     @GetMapping("about.html")
     public String about() {
+        System.out.println("calling");
         return "about";
     }
-    @GetMapping("classes.html")
+    @GetMapping("accom.html")
     public String classes() {
-        return "classes";
+        return "accom";
     }
-    @GetMapping("yoga.html")
-    public String yoga() {
-        return "yoga";
+    @GetMapping("res.html")
+    public String res() {
+        return "res";
     }
-    @GetMapping("pricing.html")
+    @GetMapping("attraction.html")
     public String prices() {
-        return "pricing";
+        return "attraction";
     }
 
     @GetMapping("contact.html")
