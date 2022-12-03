@@ -1,1 +1,1 @@
-web java -Dserver.port=$PORT $JAVA_OPTS -jar target/registration-login-demo-0.0.1-SNAPSHOT.jar
+web: java -jar $JAVA_OPTS -Dserver.port=$PORT target/registration-login-demo-0.0.1-SNAPSHOT.jar
