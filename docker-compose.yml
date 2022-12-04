@@ -1,0 +1,14 @@
+version: '2.4'
+services:
+  audit-trail-be:
+    image: registration-login-demo:0.0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    logging:
+      options:
+        max-size: 10m
+        max-file: '5'
+      driver: json-file
+    ports:
+      - "8094:8094"
