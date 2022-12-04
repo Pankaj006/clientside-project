@@ -1,6 +1,6 @@
 version: '2.4'
 services:
-  audit-trail-be:
+  registration-login-demo:
     image: registration-login-demo:0.0.1
     build:
       context: .
