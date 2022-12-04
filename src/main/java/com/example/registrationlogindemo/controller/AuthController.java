@@ -13,7 +13,7 @@ public class AuthController {
         return "index";
     }
 
-    @GetMapping("about")
+    @GetMapping("about.html")
     public String about() {
         System.out.println("calling");
         return "about";
