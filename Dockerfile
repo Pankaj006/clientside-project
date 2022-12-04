@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:debian-slim
+FROM openjdk:17-jdk-slim
 RUN apt-get update -y
 RUN apt-get install --no-install-recommends --assume-yes wget
 RUN mkdir app
