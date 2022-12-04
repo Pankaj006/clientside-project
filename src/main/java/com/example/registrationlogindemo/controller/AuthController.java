@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AuthController {
 
+    
+      @GetMapping("/")
+    public String homepage() {
+        return "index";
+    }
 
     @GetMapping("index.html")
     public String home() {
