@@ -2,20 +2,23 @@ package com.example.registrationlogindemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class AuthController {
 
-
-    @GetMapping("index.html")
-    public String home() {
+    @GetMapping("/")
+    public String homepage() {
         return "index";
     }
 
+    @GetMapping("index.html")
+    public String home() {
+        System.out.println("calling indexx");
+        return "index";
+    }
     @GetMapping("about.html")
     public String about() {
-        System.out.println("calling");
+        System.out.println("calling about");
         return "about";
     }
     @GetMapping("accom.html")
