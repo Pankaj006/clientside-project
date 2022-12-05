@@ -6,19 +6,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AuthController {
 
-    @GetMapping("/")
+    
+      @GetMapping("/")
     public String homepage() {
         return "index";
     }
 
     @GetMapping("index.html")
     public String home() {
-        System.out.println("calling indexx");
         return "index";
     }
+
     @GetMapping("about.html")
     public String about() {
-        System.out.println("calling about");
+        System.out.println("calling");
         return "about";
     }
     @GetMapping("accom.html")
